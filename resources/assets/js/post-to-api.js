@@ -11,66 +11,66 @@
 function postToGoogle() {
 
 
+alert("res");
+
+    // var field1 = $("#fname").val();
+    // var field2 = $("#lname").val();
+    // var field3 = $("#inputEmail").val();
+    // var field4 = $("#phone").val();
+    // var field5 = $("#description").val().trim();
+    //  var field6 = $("#inputWho").val();
+    //  var field7 = $("#inputWhat").val();
+    //  var field8 = $("#inputWhere").val();
+    //  var field9 = $("#inputLength").val();
+    //   var content = " I am " + field6 + " Looking for " + field7 + " at  " + field8 + " for "  + field9 + " moredetails " + field5
+
+    // /*if(field1 == ""){
+    //     alert('Please Fill Your Name');
+    //     document.getElementById("contact_name").focus();
+
+    // }
+    // if(field2 == ""){
+    //     alert('Please Fill Your Email');
+    //     document.getElementById("contact_email").focus();
+
+    // }
+    // if(field3 == "" || field3.length > 5 || field3.length < 10){
+    //     alert('Please Fill Your Mobile Number');
+    //     document.getElementById("contact_phone").focus();
+    // }*/
+
+    // var settings = {
+    //     "async": true,
+    //     "crossDomain": true,
+    //     "url": "http://54.243.19.57:80/espocrm/api/v1/LeadCapture/6f8d8c6efa159df0a4c1cb54edcc215f",
+    //     "method": "POST",
+    //     "headers": {
+    //         "Content-Type": "application/json",
+    //         "Accept": "application/json"
+
+    //     },
 
 
-    var field1 = $("#fname").val();
-    var field2 = $("#lname").val();
-    var field3 = $("#inputEmail").val();
-    var field4 = $("#phone").val();
-    var field5 = $("#description").val().trim();
-     var field6 = $("#inputWho").val();
-     var field7 = $("#inputWhat").val();
-     var field8 = $("#inputWhere").val();
-     var field9 = $("#inputLength").val();
-       var content = " I am " + field6 + " Looking for " + field7 + " at  " + field8 + " for "  + field9 + " moredetails " + field5
+    //     "data": "{\"firstName\": \""+field1+"\",\"lastName\": \""+field2+"\",\"emailAddress\": \""+field3+"\",\"phoneNumber\": \""+field4+"\",\"description\": \""+content+"\",\"phoneNumberIsOptedOut\":1}"
+    // }
 
-    /*if(field1 == ""){
-        alert('Please Fill Your Name');
-        document.getElementById("contact_name").focus();
+    // $.ajax(settings).done(function (response) {
+    //     console.log(field5);
+    //     if(response == true){
+    //         $('#requestForm').hide();
+    //         $('#Submit').hide();
+    //         $('#note').hide();
+    //         $('.alert').show();
 
-    }
-    if(field2 == ""){
-        alert('Please Fill Your Email');
-        document.getElementById("contact_email").focus();
+    //     }
+    //     if(response != true){
+    //         //$('#requestForm').hide();
+    //         //$('#Submit').hide();
+    //         //$('#note').hide();
+    //       // $('.alert').show();
 
-    }
-    if(field3 == "" || field3.length > 5 || field3.length < 10){
-        alert('Please Fill Your Mobile Number');
-        document.getElementById("contact_phone").focus();
-    }*/
+    //     }
+    // });
 
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "http://54.243.19.57:80/espocrm/api/v1/LeadCapture/6f8d8c6efa159df0a4c1cb54edcc215f",
-        "method": "POST",
-        "headers": {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-
-        },
-
-
-        "data": "{\"firstName\": \""+field1+"\",\"lastName\": \""+field2+"\",\"emailAddress\": \""+field3+"\",\"phoneNumber\": \""+field4+"\",\"description\": \""+content+"\",\"phoneNumberIsOptedOut\":1}"
-    }
-
-    $.ajax(settings).done(function (response) {
-        console.log(field5);
-        if(response == true){
-            $('#requestForm').hide();
-            $('#Submit').hide();
-            $('#note').hide();
-            $('.alert').show();
-
-        }
-        if(response != true){
-            //$('#requestForm').hide();
-            //$('#Submit').hide();
-            //$('#note').hide();
-           // $('.alert').show();
-
-        }
-    });
-
-    return false;
+    // return false;
 }

@@ -24,6 +24,45 @@ function postToGoogle() {
      var field9 = $("#inputLength").val();
        var content = " I am " + field6 + " Looking for " + field7 + " at  " + field8 + " for "  + field9 + " moredetails " + field5
 
+// $.ajax({
+//   type: "POST",
+//   url: "send/email",
+//   data: {email : field3},
+//   cache: false,
+//   success: function(data){
+//      //$("#resultarea").text(data);
+//   }
+// });
+    var send = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://housemasters.mu/send/email",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+
+        },
+
+
+        "data": {name : field1 +" "+ field2, email: field3, msg: field5 },
+    }
+    
+      $.ajax(send).done(function (response) {
+        console.log(field3);
+        if(response === true){
+        console.log("send email");
+
+        }
+        if(response != true){
+            //$('#requestForm').hide();
+            //$('#Submit').hide();
+            //$('#note').hide();
+           // $('.alert').show();
+
+        }
+    });
+
     /*if(field1 == ""){
         alert('Please Fill Your Name');
         document.getElementById("contact_name").focus();

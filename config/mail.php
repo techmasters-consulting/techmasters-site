@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'sendinblue'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,9 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
         ],
-
+ 'sendinblue' => [
+            'transport' => 'sendinblue.v3'
+        ],
         'ses' => [
             'transport' => 'ses',
         ],

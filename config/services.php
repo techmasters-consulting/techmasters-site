@@ -13,7 +13,11 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
-
+    'sendinblue' => [        
+        'v3'    => [
+            'key'   => env('SENDINBLUE_APIKEY', null),             
+        ]
+ ],
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
