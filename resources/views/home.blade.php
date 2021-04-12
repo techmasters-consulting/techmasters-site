@@ -510,7 +510,7 @@
 
                     <div class="content text-center">
                         <h3>Emmanuel Louise</h3>
-                        <p>CEO/FOUNDER</p>
+                        <p>CTO</p>
                     </div>
                 </div>
 
@@ -535,7 +535,7 @@
 
                     <div class="content text-center">
                         <h3>Odiso Edim</h3>
-                        <p>CTO / Full Stack Developer</p>
+                        <p>Full Stack Developer</p>
                     </div>
                 </div>
 
@@ -565,7 +565,31 @@
                     </div>
                 </div>
 
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="assets/images/team/t1.png" alt="team" />
+                        <ul class="social">
+                            <li>
+                                <a href="index.html#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            </li>
+                            <li>
+                                <a href="index.html#" target="_blank"><i class="bx bxl-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="index.html#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="index.html#" target="_blank"><i class="bx bxs-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="content text-center">
+                    <h3>Robyn</h3>
+                        <p>Design Lead</p>
+                    </div>
+                </div>
+                
 
 
             </div>
